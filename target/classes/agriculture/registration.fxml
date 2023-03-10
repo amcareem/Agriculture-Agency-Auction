@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="593.0" style="-fx-background-color: #f4a688;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agriculture.Controllers.RegisterController">
+   <children>
+      <Button fx:id="registerButton" layoutX="36.0" layoutY="358.0" mnemonicParsing="false" onAction="#registerButton" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Register" />
+      <Label layoutX="69.0" layoutY="161.0" text="Name" />
+      <Label layoutX="69.0" layoutY="196.0" text="Surname" />
+      <Label layoutX="69.0" layoutY="235.0" text="Password" />
+      <Label layoutX="69.0" layoutY="270.0" text="Contact no:" />
+      <Label layoutX="71.0" layoutY="309.0" text="Address" />
+      <Label layoutX="61.0" layoutY="36.0" text="REGISTRATION">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="90.0" prefHeight="25.0" prefWidth="98.0" text="Register user as: " />
+      <ComboBox fx:id="comboBox" layoutX="262.0" layoutY="90.0" prefWidth="150.0" promptText="Farmer" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+      <TextField fx:id="txtName" layoutX="230.0" layoutY="157.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: black;" />
+      <TextField fx:id="txtSurname" layoutX="231.0" layoutY="192.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: black;" />
+      <TextField fx:id="txtContact" layoutX="232.0" layoutY="266.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: black;" />
+      <TextField fx:id="txtAddress" layoutX="232.0" layoutY="305.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: black;" />
+      <PasswordField fx:id="txtPassword" layoutX="230.0" layoutY="231.0" prefHeight="25.0" prefWidth="210.0" style="-fx-border-color: black;" />
+      <Button fx:id="btnCreateSession" layoutX="162.0" layoutY="358.0" mnemonicParsing="false" onAction="#createSession" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Create a session" />
+      <Button fx:id="backButton" layoutX="431.0" layoutY="358.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Back" />
+      <TableView fx:id="tableUsers" layoutX="1.0" layoutY="395.0" prefHeight="200.0" prefWidth="593.0" style="-fx-border-color: black;">
+         <columns>
+            <TableColumn prefWidth="75.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+            <TableColumn prefWidth="75.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+            <TableColumn prefWidth="75.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+            <TableColumn prefWidth="75.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+            <TableColumn prefWidth="75.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btnLoad" layoutX="297.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnLoadAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Load" />
+      <Button fx:id="btnCloseAuction" layoutX="455.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnCloseAuctionAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Close Auction" />
+      <Button fx:id="btnDeleteUser" layoutX="455.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #fff2df; -fx-border-color: black;" text="Delete User" />
+      <ImageView fx:id="imageView" fitHeight="98.0" fitWidth="98.0" layoutX="473.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
